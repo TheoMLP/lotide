@@ -22,7 +22,7 @@ const flatten = function(array) {
   let newArray = []
   array.forEach(function(element, index) {
     if (Array.isArray(element)) {
-      element.forEach(function(element2){
+      element.forEach(function(element2) {
         newArray.push(element2)
       })
     }
