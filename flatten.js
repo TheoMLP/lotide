@@ -19,23 +19,22 @@ const assertArraysEqual = function(array1, array2) {
 };
 
 const flatten = function(array) {
-  let newArray = []
+  let newArray = [];
   array.forEach(function(element, index) {
-    if (Array.isArray(element)) {
+    if (Array.isArray(element)) {
       element.forEach(function(element2) {
-        newArray.push(element2)
-      })
+        newArray.push(element2);
+      });
+    } else {
+      newArray.push(element);
     }
-    else {
-      newArray.push(element)
-    }
-  })
-  return newArray
-}
+  });
+  return newArray;
+};
 
-console.log(flatten([1, 2, [3, 4], 5, [6]]))
+console.log(flatten([1, 2, [3, 4], 5, [6]]));
 
- /*if (Array.isArray(element)) {
+/* if (Array.isArray(element)) {
       array.splice(index, 1)
       for (var x = element.length - 1; x >= 0; --x) {
         console.log(element)

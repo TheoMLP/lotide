@@ -6,19 +6,19 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-//find the key that contains the value 
-//return the key 
-//if no key is found return undefined 
+//find the key that contains the value
+//return the key
+//if no key is found return undefined
 
-const findKeyByValue = function(object, value) {
+const findKeyByValue = function(object, value) {
   for (let key in object) {
     if (value === object[key]) {
-      return key
+      return key;
     }
   }
-}
+};
 
-const bestTVShowsByGenre = { 
+const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"

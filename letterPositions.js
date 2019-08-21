@@ -18,15 +18,15 @@ const assertArraysEqual = function(array1, array2) {
   }
 };
 
-const letterPositions = function(sentence) {
-  let cleanedSentence = sentence.split('')
-  let results = {}
+const letterPositions = function(sentence) {
+  let cleanedSentence = sentence.split('');
+  let results = {};
   cleanedSentence.forEach(function(letter, index) {
     if (letter !== " ") {
-      results[letter] ? results[letter].push(index) : results[letter] = [index]
+      results[letter] ? results[letter].push(index) : results[letter] = [index];
     }
-  })
-  return results
-}
+  });
+  return results;
+};
 
-console.log(letterPositions("hello my name is bob"))
+console.log(letterPositions("hello my name is bob"));
