@@ -11,6 +11,8 @@ const countLetters = function(string) {
   let results = {};
   for (let letter of cleanedString) {
     results[letter] ? results[letter] += 1 : results[letter] = 1;
+    //results[letter] = results[letter] || 0 
+    //results[letter] += 1
   }
   return results;
 };
