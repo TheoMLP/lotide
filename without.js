@@ -21,8 +21,7 @@ const assertArraysEqual = function(array1, array2) {
 const without = function(array, value) {
    newArray = []
    array.forEach(function(element) {
-    if (value.includes(element)) {
-    } else { 
+    if (!value.includes(element)) {
       newArray.push(element)
     }
   })
