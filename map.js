@@ -20,16 +20,16 @@ const assertArraysEqual = function(array1, array2) {
 
 const words = ["ground", "control", "to", "major", "tom"];
 const words2 = ["yes", "no", "maybe"];
-const words3 = ["I", "love", "functional", "programming"]
+const words3 = ["I", "love", "functional", "programming"];
 
 const map = function(array, callback) {
-  let results = []
+  let results = [];
   for (let item of array) {
-    results.push(callback(item))
+    results.push(callback(item));
   }
-  return results
-}
+  return results;
+};
 
-assertArraysEqual(map(words, word => word[0]), [ 'g', 'c', 't', 'm', 't' ])
-assertArraysEqual(map(words2, word => word[0]), [ 'y', 'n', 'm'])
-assertArraysEqual(map(words3, word => word[0]), [ 'I', 'l', 'f', 'p'])
+assertArraysEqual(map(words, word => word[0]), [ 'g', 'c', 't', 'm', 't' ]);
+assertArraysEqual(map(words2, word => word[0]), [ 'y', 'n', 'm']);
+assertArraysEqual(map(words3, word => word[0]), [ 'I', 'l', 'f', 'p']);
