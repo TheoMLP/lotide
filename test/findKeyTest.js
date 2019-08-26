@@ -11,13 +11,13 @@ describe("#findKey", () => {
     "Akelarre":  { stars: 3 }
   };
 
-  it("should return 'noma' when passed names object and (x => x.stars === 2) as callback func", () => {
+  it(`should return 'noma' when passed ${names} object and (x => x.stars === 2) as callback func`, () => {
     assert.strictEqual(findKey(names, x => x.stars === 2), "noma");
   });
-  it("should return 'Akaleri' when passed names object and (x => x.stars === 3) as callback func", () => {
+  it(`should return 'Akaleri' when passed ${names} object and (x => x.stars === 3) as callback func`, () => {
     assert.strictEqual(findKey(names, x => x.stars === 3), "Akaleri");
   });
-  it("should return 'Blue Hill' when passed names object and (x => x.stars === 1) as callback func", () => {
+  it(`should return 'Blue Hill' when passed$ {names} object and (x => x.stars === 1) as callback func`, () => {
     assert.strictEqual(findKey(names, x => x.stars === 1), "Blue Hill");
   });
 });
