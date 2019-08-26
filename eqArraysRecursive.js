@@ -6,7 +6,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const eqArrays = function(array1, array2) {
+const eqArraysRecursive = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
   }
