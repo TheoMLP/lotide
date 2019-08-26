@@ -30,3 +30,5 @@ const letterPositions = function(sentence) {
 };
 
 console.log(letterPositions("hello my name is bob"));
+
+module.exports = letterPositions; 

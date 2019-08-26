@@ -41,3 +41,5 @@ console.log(flatten([1, 2, [3, 4], 5, [6]]));
         array.splice(index, 0, element[x])
       }
     }*/
+
+module.exports = flatten;

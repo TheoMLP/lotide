@@ -65,3 +65,5 @@ assertEqual(eqObjects({ a: { y: 0, z: { g: { c: 0 } } }, b: { w: 1, d:{ t: 3, s:
 //     .forEach(c => node[c.id] = makeTree(categories, c.id))
 //   return node
 // }
+
+module.exports = eqObjectsRecursive;

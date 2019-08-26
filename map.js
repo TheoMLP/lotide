@@ -33,3 +33,5 @@ const map = function(array, callback) {
 assertArraysEqual(map(words, word => word[0]), [ 'g', 'c', 't', 'm', 't' ]);
 assertArraysEqual(map(words2, word => word[0]), [ 'y', 'n', 'm']);
 assertArraysEqual(map(words3, word => word[0]), [ 'I', 'l', 'f', 'p']);
+
+module.exports = map;
