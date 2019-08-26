@@ -1,10 +1,6 @@
 const eqArrays = require("./eqArrays");
-//same number of keys (check length)
-//same keys
-//same values
-//if the value is an array use eqArrays
 
-const eqObjectsRecursive = function(object1, object2) {
+const eqObjects = function(object1, object2) {
   if (Object.keys(object1).length !== Object.keys(object2).length) {
     return false;
   }
@@ -13,14 +9,19 @@ const eqObjectsRecursive = function(object1, object2) {
       return eqArrays(object1[key], object2[key]);
     } else if ((typeof(object1[key]) !== typeof({}) && typeof(object2[key]) !== typeof({})) && (object1[key] !== object2[key])) {
       return false;
-    } else if ((typeof(object1[key]) === typeof({}) || typeof(object1[key]) === typeof({})) && eqObjectsRecursive(object1[key], object2[key]) === false) {
+    } else if ((typeof(object1[key]) === typeof({}) || typeof(object1[key]) === typeof({})) && eqObjects(object1[key], object2[key]) === false) {
       return false;
     } else if (typeof(object1[key]) === typeof({}) || typeof(object1[key]) === typeof({})) {
-      eqObjectsRecursive(object1[key], object2[key]);
+      eqObjects(object1[key], object2[key]);
     }
   }
   return true;
 };
+
+//same number of keys (check length)
+//same keys
+//same values
+//if the value is an array use eqArrays
 
 // let makeTree = (categories, parent) => {
 //   let node = {}
