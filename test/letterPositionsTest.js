@@ -2,7 +2,7 @@ const { assert } = require("chai");
 const letterPositions = require("../letterPositions");
 
 describe("#letterPositions", () => {
-  let letterPositionObject = { 
+  let letterPositionObject = {
     h: [ 0 ],
     e: [ 1, 12 ],
     l: [ 2, 3 ],
@@ -13,7 +13,7 @@ describe("#letterPositions", () => {
     a: [ 10 ],
     i: [ 14 ],
     s: [ 15 ],
-    b: [ 17, 19 ] 
+    b: [ 17, 19 ]
   };
 
   it(`should return ${letterPositionObject} for 'hello my name is bob'`, () => {

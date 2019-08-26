@@ -39,7 +39,7 @@ describe("#eqObjects", () => {
   });
   it("should return false when passed eqObjects({ a: { y: 0, z: { g: { c: 0 } } }, b: { w: 1, d:{ t: 2, s: 3 } } }, { a: { y: 0, z: { g: { c: 0 } } }, b: { w: 1, d:{ t: 3, s: 3 } } })", () => {
     assert.strictEqual(eqObjects({ a: { y: 0, z: { g: { c: 0 } } }, b: { w: 1, d:{ t: 2, s: 3 } } }, { a: { y: 0, z: { g: { c: 0 } } }, b: { w: 1, d:{ t: 3, s: 3 } } }), false);
-  }); 
+  });
   it("should return true when passed eqObjects({ a: { y: 0, z: { g: { c: 0 } } }, b: { w: 1, d:{ t: 3, s: 3 } } }, { a: { y: 0, z: { g: { c: 0 } } }, b: { w: 1, d:{ t: 3, s: 3 } } })", () => {
     assert.strictEqual(eqObjects({ a: { y: 0, z: { g: { c: 0 } } }, b: { w: 1, d:{ t: 3, s: 3 } } }, { a: { y: 0, z: { g: { c: 0 } } }, b: { w: 1, d:{ t: 3, s: 3 } } }), true);
   });

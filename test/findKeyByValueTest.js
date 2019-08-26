@@ -3,7 +3,7 @@ const findKeyByValue = require("../findKeyByValue");
 
 describe("#findKeyByValue", () => {
   const bestTVShowsByGenre = {
-    sci_fi: "The Expanse",
+    sciFi: "The Expanse",
     comedy: "Brooklyn Nine-Nine",
     drama:  "The Wire"
   };
@@ -15,7 +15,7 @@ describe("#findKeyByValue", () => {
     assert.strictEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
   });
   it(`should return 'sci_fi' when passed ${bestTVShowsByGenre} and 'The Expanse'`, () => {
-    assert.strictEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), "sci_fi");
+    assert.strictEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), "sciFi");
   });
   it(`should return 'comedy' when passed ${bestTVShowsByGenre}and 'Brooklyn Nine-Nine'`, () => {
     assert.strictEqual(findKeyByValue(bestTVShowsByGenre, "Brooklyn Nine-Nine"), "comedy");

@@ -8,5 +8,5 @@ const without = function(array, value) {
   return newArray;
 };
 
-module.exports = without; 
+module.exports = without;
 

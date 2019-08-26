@@ -14,4 +14,4 @@ describe("#map", () => {
   it("should return [] when passed an empty array and word => word[0] as callback", () => {
     assert.deepEqual(map([], word => word[0]), []);
   });
-})
+});
