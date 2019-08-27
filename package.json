@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@theo.mp/lotide",
   "version": "1.0.0",
-  "description": "lotide project",
+  "description": "lotide library project of the Lighthouse Labs bootcamp",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/TheoMLP/lotide.git"
   },
-  "author": "TheoMLP",
+  "author": "Theo Malaper",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TheoMLP/lotide/issues"
